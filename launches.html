@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See all upcoming launches from SpaceX - find out where to stream, watch or information on launch missions.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="content/stylesheet.css">
+    <title>SpaceX Departures - Launches</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-header">
+            <span>
+                <span class="burger-menu" onclick="openSidenav()">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </span>
+                <a href="index.html"><img src="content/graphics/space-x_logoW.svg" alt="SpaceX Departures Logo"></a>
+            </span>
+        </nav>
+        <aside id="slideout-nav" data-menu-open="false">
+            <div class="menu-close" onclick="closeSidenav()">
+                <div id="x-1" class="line"></div>
+                <div id="x-2" class="line"></div>
+            </div>
+            
+            <ul class="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="launches.html" class="active-nav">Launches</a></li>
+                <li><a href="dragon.html">Dragon</a></li>
+                <li><a href="falcon.html">Falcon</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+                <li><a href="reusable_launch_system.html">Reusable<br/>Launch System</a></li>
+                <li><a href="index.html#contactForm">Contact</a></li>
+            </ul>
+        </aside>
+    </header>
+    
+    <section class="top-section lnc-bg">
+        <div class="container wide">   
+            <div class="con-top">
+                <div>
+                    <p>
+                        Find mission details, launch updates and streaming availability
+                    </p>
+                    <h1 class="promo-heading">All Upcoming <span class="accentuate detail"><br/>Launches</span></h1>
+                    <h2>Launch List</h2> 
+                </div>
+
+                <div class="con-bottom">
+                    <div class="programs">
+                        <div class="program-container">
+                            <h3 id="hidden-header">SpaceX - Upcoming Launches</h3>
+                            <div class="card-container">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curiosity-container">
+                        <h3>curiosity <br>must <br>continue
+                            <i class="material-icons curi-2">keyboard_arrow_down</i>
+                        </h3>
+                        
+                        <div class="curiosity-con">
+                            <div class="curiosity-card " id="card1">
+                                <div class="card-desc">
+                                    <p>Launches</p>
+                                    <div class="btn btn-sml">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85px" height="50">
+                                          <rect width="85px" height="50" class="btn-rect"/>
+                                        </svg>
+                                        <span class="btn-txt"><a href="launches.html">MORE</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curiosity-card " id="card2">
+                                <div class="card-desc">
+                                    <p>Milestones</p>
+                                    <div class="btn btn-sml">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85px" height="50">
+                                          <rect width="85px" height="50" class="btn-rect"/>
+                                        </svg>
+                                        <span class="btn-txt"><a href="milestones.html">MORE</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curiosity-card " id="card5">
+                                <div class="card-desc">
+                                    <p>Launch Systems</p>
+                                    <div class="btn btn-sml">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85px" height="50">
+                                          <rect width="85px" height="50" class="btn-rect"/>
+                                        </svg>
+                                        <span class="btn-txt"><a href="reusable_launch_system.html">MORE</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curiosity-card " id="card6">
+                                <div class="card-desc">
+                                    <p>Starship</p>
+                                    <div class="btn btn-sml">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85px" height="50">
+                                          <rect width="85px" height="50" class="btn-rect"/>
+                                        </svg>
+                                        <span class="btn-txt"><a href="reusable_launch_system.html#starship">MORE</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="scrollUp()" class="up-btn" title="Go to top">Go Up</button>
+    <footer>
+        <a href="index.html"><img src="content/graphics/space-x_logo.svg" alt="SpaceX Departures Logo"></a>
+        <p>&#169; SpaceX Departures 2020</p>
+    </footer>
+
+    <script src="content/js/script.js"></script>
+    <script src="content/js/upcoming.js"></script>
+    <script src="content/js/launchComponents.js"></script>
+</body>
+</html>
